@@ -1,0 +1,26 @@
+.puzzle {
+    display: grid;
+    grid-template-columns: repeat(4, 250px); 
+    grid-template-rows: repeat(3, auto); 
+    grid-template-areas:
+        "piece01 piece01 piece03 piece03"
+        "piece05 piece02 piece04 piece06"
+        "piece08 piece08 piece09 piece07";
+}
+
+#piece01 { grid-area: piece01; }
+#piece02 { grid-area: piece02; }
+#piece03 { grid-area: piece03; }
+#piece04 { grid-area: piece04; }
+#piece05 { grid-area: piece05; }
+#piece06 { grid-area: piece06; }
+#piece07 { grid-area: piece07; }
+#piece08 { grid-area: piece08; }
+#piece09 { grid-area: piece09; }
+#piece10 { grid-area: piece10; }
+
+
+.piece-s, .piece-h, .piece-l {
+    width: 100%;
+    height: 100%;
+}
